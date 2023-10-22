@@ -1,0 +1,8 @@
+Login Help
+
+Common errors:
+"Incorrect username or password!" - This means that you are trying to delete the account you are currently signed into. To delete this account, sign into another administrator account and attempt to delete the account.
+
+Functions:
+"Log in" - If the credentials match, then you will be taken to the relevant page. 
+"Create Account" - Will take you to the page for you the page to create an account. Learn more about this is Create Account Help.

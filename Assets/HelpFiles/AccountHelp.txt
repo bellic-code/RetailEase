@@ -1,0 +1,12 @@
+Account Help
+
+Common errors:
+"You cannot delete the current user!" - This means that you are trying to delete the account you are currently signed into. To delete this account, sign into another administrator account and attempt to delete the account.
+"No account selected!" - you are trying to perform an action (such as deletion) and there is no account selected. To select, simply click a name and it will become highlighted in blue.
+
+Functions:
+"Load Accounts" - will load all the currently registered user accounts on the system into the viewfinder.
+"Add accounts" - will redirect you to the "Create Account" tab, where you can register a new user.
+"Delete" - will attempt to delete the currently selected account. Press 'Yes' to confirm and 'No' to abort. 
+"Save" - will save any and all changes made to the accounts registered in the system. THERE IS NO UNDO AFTER THIS POINT!
+

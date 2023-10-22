@@ -1,0 +1,4 @@
+CPU
+RAM
+STG
+PHN

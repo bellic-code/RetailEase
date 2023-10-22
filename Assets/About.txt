@@ -1,0 +1,14 @@
+Thanks to the followings persons for aiding the development of RetailEase POS:
+
+Shumayl Peer:		Application Tester
+Gustavo Carreno:	Application Tester
+Keshan Pillay: 		Verified code and concepts outside of the syllabus
+Glen Surtees:		Error checking 
+Thomas Jourdan: 	Error checking & code recommendations & improvements 
+Jan Andreasan: 		Error checking & code recommendations & improvements
+
+Additional thanks goes to icons8.com, for their lovely 3D Fluencency icon pack which has helped bring this program to life to look modern despite the use of Delphi 2010. Automated tools were used to generate lists of test data used to test the functionality of the application, however played no role in the development of the application. Appreciation also goes out to forum services such as StackOverFlow for the dense amount of questions and answers that can be found and created.
+
+Tested, developed, and brought to you by:
+Thivyan Pillay
+10-2

@@ -1,0 +1,14 @@
+Stock Help:
+
+Common errors:
+"No stock has been selected!" - Please select an item from the list that displays all the stock. It will turn blue when selected.
+
+Functions:
+"Add Product" - Will take you to a seperate page to add new stock. Learn more in 'Add Product Help'
+"Delete" - After selecting desired stock to remove from the catalogue, press 'Yes' on the dialog to confirm, and 'No' to cancel. Ensure to click 'Save Changes' after, as changes are not automatically saved!
+"Save Changes" - Will save any modifications that have been made to the stock catalogue. You will receive a message showing that it was successfully saved.
+"Refresh Catalogue" - Will refresh the catalogue. Can be used to undo changes (if they were not saved) or make new changes visible. You are prompted to do it after any modifications are made, such as adding or modifying stock. It is highly recommened that you do it!
+
+Stock Functions:
+"Load Stock" - After selecting an option, it's stock will load into the number input field, where you can adjust the Currrent and Minimum Stock accordingly.
+"Save Stock" - Will save changes that were made. This does autosave and cannot be undone!

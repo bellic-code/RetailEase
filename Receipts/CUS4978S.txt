@@ -1,0 +1,29 @@
+Welcome to TopTech!
+-------------------------------------------
+Product	Q
+Price 
+-------------------------------------------
+AMDRyzen7 (*1)
+R179,99
+
+Grand total:	R179,99
+-------------------------------------------
+Transaction of: CUS4978S
+2023/10/21	08:12:51
+-------------------------------------------
+
+Change calculated for: 
+Money received: 	R200,00
+Actual total: 	R179,99
+Change returned: 	R20,01
+R20:	×1
+
+Cents: 	1c
+
+Thank you for shopping at TopTech!
+Have a wonderful day!
+
+Contact Details:
+Phone:?074 562 8961
+Email: toptech-dbn@gmail.com
+

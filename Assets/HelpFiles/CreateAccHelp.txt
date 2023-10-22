@@ -1,0 +1,14 @@
+Create Account Help
+
+Common errors:
+"You cannot delete the current user!" - This means that you are trying to delete the account you are currently signed into. To delete this account, sign into another administrator account and attempt to delete the account.
+"No account selected!" - you are trying to perform an action (such as deletion) and there is no account selected. To select, simply click a name and it will become highlighted in blue.
+
+Functions:
+"Username" field - Enter name you would like to use to sign in.
+"Password" field - Enter password to be used to authenticate and protect account.
+"Eye" - Allows user to view password as '●●●●' or 'abcd'
+"Type of Account" - Allows you to choose Manager (allows higher level acccess), or Cashier (allows lower order access).
+"Create Acccount" - Will register the new account, assuming all conditions are met.
+"Return to login" - Return to Log In tabsheet.
+"Return Accounts" - Return to Accounts tabsheet.

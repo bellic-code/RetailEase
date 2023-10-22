@@ -1,0 +1,50 @@
+
+
+
+Product // Q	Price: 
+
+SamsungSSD1TB(×1)
+	R123,99
+LogitechWireless(×1)
+	R129,99
+S6LTE(×1)	R399,99
+
+Grand total:	R1 161,93
+-------------------------------------------
+Transaction of: CUS4338G
+2023/10/19	15:19:19
+-------------------------------------------
+
+Change calculated for: CUS4338G
+Money received: 	R2 000,00
+Actual total: 	R1 161,93
+Change returned: 	R838,07
+R200:	×4
+R20:	×1
+R10:	×1
+R5:	×1
+R2:	×1
+R1:	×1
+
+Cents: 	7c
+Thank you for shopping at TopTech, 
+CUS4338G!
+Have a wonderful day!
+
+Change calculated for: CUS4338G
+Money received: 	R2 000,00
+Actual total: 	R1 161,93
+Change returned: 	R838,07
+R200:	×4
+R20:	×1
+R10:	×1
+R5:	×1
+R2:	×1
+R1:	×1
+
+Cents: 	7c
+Thank you for shopping at TopTech, 
+CUS4338G!
+Have a wonderful day!
+
+
