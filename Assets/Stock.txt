@@ -2,7 +2,6 @@ CPU_AMDEpyc@149,99|1500/18
 CPU_AMDRyzen5@149,99|150/18
 CPU_AMDRyzen7@179,99|199/20
 CPU_AMDRyzen9@149,99|150/18
-CPU_AppleM1@179,99|200/20
 CPU_ArmNeoverse@159,99|60/10
 CPU_IntelCeleron@149,99|150/18
 CPU_IntelCorei3@179,99|200/20
@@ -11,6 +10,9 @@ CPU_IntelCorei7@159,99|50/13
 CPU_IntelCorei9@179,99|200/20
 CPU_IntelPentium@159,99|50/13
 CPU_RyzenR6000@1525|13/3
+dem_def@123,5|1/1
+dem_def@123,5|1/1
+dem_def@123,5|1/1
 KYB_AsusWireless@129,99|8/9
 KYB_CorsairWired@109,99|80/12
 KYB_DellWired@109,99|80/12
