@@ -1,0 +1,19 @@
+Developed with the invaluable support of:
+
+- Gustavo Carreno: Application Tester & Motivator
+- KodeZwerg: Application Tester & Red editbox inspiration
+- Alecu Stefan: Application Tester & Erroneous/ Extreme Data Validation Tester, helped aid understanding of 'in' operator
+- Keshan Pillay: Verified that procedures were used efficiently and correctly
+- Glen Surtees: Error checking, taught me how to use Val()
+- Thomas Jourdan: Error checking & code recommendations & improvements, ShowHint, OnKeyPress 
+- Jan Andreasan: Error checking & code recommendations & improvements, inspired uniform NavPanel
+- Mr. Long: Procedures (https://www.youtube.com/watch?v=NHLLxafoVxM)
+- DelphiBasics: InputQuery (https://www.delphibasics.co.uk/RTL.php?Name=InputQuery#:~:text=The%20InputQuery%20function%20displays%20a,the%20return%20value%20is%20True.)
+- DelphiBasics: DateTime (https://www.delphibasics.co.uk/RTL.php?Name=formatdatetime)
+- Emabarcadero DocWiki: Cursors(https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Mouse_Cursor_Constants)
+
+Special thanks to icons8.com for their contribution of the beautiful 3D Fluencency icon pack, which helped enhance the 
+program's modern style and appearance. Automated tools were utilized to generate lists of test data, playing a pivotal role in rigorously testing the application's functionality. Gratitude extends to the vibrant communities at StackOverflow and DelphiBasics for providing a wealth of questions and answers that have been instrumental in this project's development.
+
+Tested, developed, and delivered to you by:
+bellic-code
