@@ -1,1 +1,0 @@
-This is where all the receipts are collected and stored :)
