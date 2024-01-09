@@ -1,0 +1,35 @@
+Register Help
+
+ Common Errors: 
+
+1.  Error: "There is no stock in the catalogue." 
+   -  Description:  There is no registered stock. The app cannot perform its functions.
+   -  Resolution:  Please ask the manager to add some stock to the catalog.
+
+2.  Error: "Not enough stock available." 
+   -  Description:  The quantity requested is greater than the stock available.
+   -  Resolution:  Please register more stock to meet the demand.
+
+3.  Error: "Stock levels low." 
+   -  Description:  A warning that appears when stock is getting low, as decided by the minimum stock declared by the manager.
+
+4.  Error: "No stock remaining. Please contact supplier to order more stock." 
+   -  Description:  Stock level for the selected item is 0, and it cannot be bought.
+   -  Resolution:  Please contact the supplier to order more stock.
+
+5.  Error: "No item selected. Please select item from stock view finder to add to receipt." 
+   -  Description:  An item has not been selected from the stock view.
+   -  Resolution:  Please select an item (it will turn blue).
+
+ Functions: 
+
+1.  Add to Receipt 
+   -  Description:  Adds the currently selected item from the stock view to the receipt preview.
+   -  Tip:  Double-click on the receipt to add products faster.
+
+2.  Finalize Order 
+   -  Description:  Asks for the customer's name and finalizes the order, taking you to checkout.
+
+3.  Cancel Order 
+   -  Description:  Will cancel the current order.
+   -  Warning:  CANNOT BE UNDONE.

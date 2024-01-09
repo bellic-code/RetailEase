@@ -1,0 +1,29 @@
+Account Help
+
+Common Errors:
+
+1.  Error: "You cannot delete the current user." 
+   -  Description:  This error occurs when you attempt to delete the account you are currently signed into.
+   -  Resolution:  To delete this account, please sign in to another administrator account and then try to delete the account.
+
+2.  Error: "No account selected. Please select an account from the account viewer to modify." 
+   -  Description:  This error message indicates that you are trying to perform an action, such as deletion, without selecting an account.
+   -  Resolution:  To select an account, simply click on a name, and it will become highlighted in blue.
+
+ Functions: 
+
+1.  Add Account 
+   -  Description:  This function redirects you to the "Create Account" tab, where you can register a new user.
+
+2.  Delete 
+   -  Description:  This function attempts to delete the currently selected account.
+   -  Usage:  Press 'Yes' to confirm the deletion and 'No' to cancel the operation.
+
+3.  Save 
+   -  Description:  This function saves any and all changes made to the accounts registered in the system.
+   -  Important:  Please note that there is no undo option after this point, so use it carefully.
+
+4.  Master Role Reset 
+   -  Description:  This function resets RetailEase back to its factory state.
+   -  Caution:  Be aware that this action will permanently remove all data from the system.
+   -  Warning:  Please proceed with caution.

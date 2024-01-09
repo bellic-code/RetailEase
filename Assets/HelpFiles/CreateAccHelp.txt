@@ -1,0 +1,34 @@
+Create Account Help
+
+ Common Errors: 
+
+ Reasons for the Username Field Being Red: 
+1. Name contains forbidden characters: [._ ]
+2. Username does not match
+3. Field is empty
+
+ Reasons for the Passkey Field Being Red: 
+1. Passkey does not match
+
+ Functions: 
+
+1.  "Username" field: 
+   -  Description:  Enter the name you would like to use to sign in.
+
+2.  "Password" field: 
+   -  Description:  Enter the password to be used to authenticate and protect your account.
+
+3.  "Eye" (View/Hide Passkey): 
+   -  Description:  Allows the user to view the password as '  ' or in its clear text form, such as 'abcd'.
+
+4.  "Type of Account": 
+   -  Description:  Allows you to choose between Manager (providing higher-level access) or Cashier (providing lower-level access) for your account.
+
+5.  "Create Account": 
+   -  Description:  Registers the new account, assuming all conditions are met.
+
+6.  "Return to Login": 
+   -  Description:  Return to the Log In tabsheet.
+
+7.  "Return to Accounts": 
+   -  Description:  Return to the Accounts tabsheet.

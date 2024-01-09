@@ -1,0 +1,26 @@
+Modify/ Edit Stock Help
+
+ Common Errors: 
+
+1.  Category Field: 
+   -  Description:  Input is longer or shorter than 3 characters, or it contains forbidden characters such as [@, _, /, |], or the input field is empty.
+
+2.  Product Name Field: 
+   -  Description:  Input contains forbidden characters such as [@, _, /, |], or the input field is empty.
+
+3.  Price Field: 
+   -  Description:  Input is not a valid real value (e.g. 15.99), price inputted is greater than R1 000 000, or the input field is empty.
+
+ Functions: 
+
+1.  Preview 
+   -  Description:  Use this function to see what the entry will look like. You can press "Register Product" to approve it or edit it and preview again.
+
+2.  Reset 
+   -  Description:  This function clears the interface, allowing you to start fresh.
+
+3.  Reload Original Values 
+   -  Description:  This function will reset the values to the original values; i.e., what it looked like before being edited.
+
+4.  Cancel 
+   -  Description:  Use this function to discard all unsaved progress, return to the "Product Stock" interface, and make the "Accounts" tabsheet visible again.
