@@ -101,7 +101,7 @@ type
     bmbAddNewAccounts: TBitBtn;
     redHelp: TRichEdit;
     bmbCancelOrder: TBitBtn;
-    img1: TImage;
+    imgSubTotal: TImage;
     bmbStockEditRevert: TBitBtn;
     bmbSaveStockEdits: TBitBtn;
     memPhrases: TMemo;
@@ -359,9 +359,11 @@ begin
   bmbReturnLogIn.Visible := True;
   bmbReturnAccounts.Visible := False;
   bmbReturnAccounts.Enabled := False;
+  bmbReturnAccounts.Glyph.Assign(nil);
   bmbCreateAccount.Visible := True;
   bmbAddNewAccounts.Visible := False;
   bmbAddNewAccounts.Enabled := False;
+  bmbAddNewAccounts.Glyph.Assign(nil);
   // Refresh the Acccounts view (lstUsers)
   lstRegisteredUsers.Clear;
   lstRegisteredUsers.Items.LoadFromFile('Assets\Logins.txt');
@@ -389,6 +391,7 @@ begin
   lstStockViewBE.Items.Clear;
   lstStockViewBE.Items.LoadFromFile('Assets\Stock.txt');
   pgcMain.ActivePage := tsRegister;
+  sedQuantity.Value := 1;
   // Warning to register stock if none is detected.
   if lstStockViewBE.Items.Count = 0 then
   begin
@@ -403,7 +406,9 @@ begin
   tsRegister.TabVisible := True;
   tsChange.TabVisible := False;
   bmbChange.Enabled := True;
+  bmbChange.Glyph.LoadFromFile('Assets/MoneyBag.bmp');
   bmbPrint.Enabled := False;
+  bmbPrint.Glyph.Assign(nil);
   rTotal := 0;
   edtSubTotal.Clear;
   // Loads default text into (redReceipt)
@@ -415,7 +420,9 @@ begin
   if redReciept.Lines.Count < 6 then
   begin
     bmbFinalizeOrder.Enabled := False;
+    bmbFinalizeOrder.Glyph.Assign(nil);
     bmbRegisterReset.Enabled := False;
+    bmbRegisterReset.Glyph.Assign(nil);
   end;
 end;
 
@@ -441,9 +448,11 @@ begin
   bmbReturnLogIn.Visible := False;
   bmbReturnAccounts.Visible := True;
   bmbReturnAccounts.Enabled := True;
+  bmbReturnAccounts.Glyph.LoadFromFile('Assets/Return.bmp');
   bmbCreateAccount.Visible := False;
   bmbAddNewAccounts.Visible := True;
   bmbAddNewAccounts.Enabled := True;
+  bmbAddNewAccounts.Glyph.LoadFromFile('Assets/AddAccount.bmp');
   imgHideCreate.Visible := True;
   imgViewCreate.Visible := False;
 end;
@@ -592,6 +601,7 @@ begin
     // Saves to textfile (Logins.txt)
     memAccounts.Lines.SaveToFile('Assets\Logins.txt');
     bmbReturnLogIn.Enabled := True;
+    bmbReturnLogIn.Glyph.LoadFromFile('Assets/Return.bmp');
     rgpTypeAccounts.Buttons[1].Enabled := True;
     // Reets interface:
     edtCreateUserName.Clear;
@@ -690,6 +700,7 @@ begin
                 rChange := rGiven - rTotal;
                 begin
                   bmbPrint.Enabled := True;
+                  bmbPrint.Glyph.LoadFromFile('Assets/Print.bmp');
                   redChange.Lines.Add('Money received: ' + #9 + FloatToStrF
                       (rGiven, ffCurrency, 8, 2));
                   redChange.Lines.Add
@@ -783,6 +794,7 @@ begin
                       ('Contact Details:' + #13 + 'Phone: 074 562 8961' +
                         #13 + 'Email: toptech-dbn@gmail.com');
                     bmbChange.Enabled := False;
+                    bmbChange.Glyph.Assign(nil);
                   end;
                 end;
               end;
@@ -950,6 +962,7 @@ begin
     // Saves to textfile (Logins.txt)
     memAccounts.Lines.SaveToFile('Assets\Logins.txt');
     bmbReturnLogIn.Enabled := True;
+    bmbReturnLogIn.Glyph.LoadFromFile('Assets/Return.bmp');
     rgpTypeAccounts.Buttons[1].Enabled := True;
     // Reets interface:
     edtCreateUserName.Clear;
@@ -1059,7 +1072,9 @@ begin
     other windows become inaccessable. }
   lstRegisteredUsers.Items.LoadFromFile('Assets\Logins.txt');
   bmbAddAccounts.Enabled := True;
+  bmbAddAccounts.Glyph.LoadFromFile('Assets/AddAccount.bmp');
   bmbDeleteAccount.Enabled := True;
+  bmbDeleteAccount.Glyph.LoadFromFile('Assets/Delete.bmp');
   tsStock.TabVisible := False;
 end;
 
@@ -1170,6 +1185,8 @@ begin
           begin
             imgLock.Visible := True;
             bmbPrint.Enabled := False;
+            bmbPrint.Glyph.Assign(nil);
+            sedQuantity.Value := 1;
 
             rTotal := 0;
             tsRegister.TabVisible := True;
@@ -1190,7 +1207,9 @@ begin
             if redReciept.Lines.Count < 6 then
             begin
               bmbFinalizeOrder.Enabled := False;
+              bmbFinalizeOrder.Glyph.Assign(nil);
               bmbRegisterReset.Enabled := False;
+              bmbRegisterReset.Glyph.Assign(nil);
             end;
             bAccountType := True;
           end
@@ -1241,10 +1260,6 @@ begin
           pgcMain.ActivePage := tsAddStock;
           tsAccounts.TabVisible := False;
           tsStock.TabVisible := False;
-        end;
-      mrNo:
-        begin
-          ShowMessage('Please register some stock stock when you are ready.');
         end;
     end;
   end
@@ -1617,10 +1632,12 @@ begin
     mrYes:
       begin
         redReciept.Lines.Clear;
+        sedQuantity.Value := 1;
         sCustomerName := '';
         redFinalReciept.Clear;
         redChange.Lines.Clear;
         bmbChange.Enabled := True;
+        bmbChange.Glyph.LoadFromFile('Assets/MoneyBag.bmp');
         lstStockViewBE.Items.Clear;
         lstStockViewBE.Items.LoadFromFile('Assets\Stock.txt');
         lstStockViewBE.Color := clWindow;
@@ -1639,7 +1656,9 @@ begin
         if redReciept.Lines.Count < 6 then
         begin
           bmbFinalizeOrder.Enabled := False;
+          bmbFinalizeOrder.Glyph.Assign(nil);
           bmbRegisterReset.Enabled := False;
+          bmbRegisterReset.Glyph.Assign(nil);
         end;
         tsRegister.TabVisible := True;
         pgcMain.ActivePage := tsRegister;
@@ -1776,6 +1795,46 @@ end;
 procedure TfrmRetailEase.FormCreate(Sender: TObject);
 begin
   frmRetailEase.Position := poDesktopCenter;
+
+  imgLock.Picture.LoadFromFile('Assets/Lock.png');
+  imgHelp.Picture.LoadFromFile('Assets/Help.png');
+  imgLogon.Picture.LoadFromFile('Assets/Abstract.jpeg');
+  imgChange.Picture.LoadFromFile('Assets/Cashier.jpg');
+  imgStock.Picture.LoadFromFile('Assets/WorkSpace.png');
+  imgAddStock.Picture.LoadFromFile('Assets/WorkSpace.png');
+  imgAccounts.Picture.LoadFromFile('Assets/UserAccounts.jpg');
+  imgRegister.Picture.LoadFromFile('Assets/CashRegister.jpeg');
+  imgCreate.Picture.LoadFromFile('Assets/CreateAccount.jpg');
+  imgSubTotal.Picture.LoadFromFile('Assets/Money.png');
+  imgProfile.Picture.LoadFromFile('Assets/Profile.png');
+  imgCreateAccount.Picture.LoadFromFile('Assets/NewProfile.png');
+
+  bmbLogin.Glyph.LoadFromFile('Assets/Login.bmp');
+  bmbCreateAccountPrompt.Glyph.LoadFromFile('Assets/AddAccount.bmp');
+  bmbCreateAccount.Glyph.LoadFromFile('Assets/AddAccount.bmp');
+  bmbAddAccounts.Glyph.LoadFromFile('Assets/AddAccount.bmp');
+  bmbReturnLogIn.Glyph.LoadFromFile('Assets/Return.bmp');
+  bmbReturnAccounts.Glyph.LoadFromFile('Assets/Return.bmp');
+  bmbFinalizeOrder.Glyph.LoadFromFile('Assets/Wallet.bmp');
+  bmbRegisterReset.Glyph.LoadFromFile('Assets/Reset.bmp');
+  bmbAddReceipt.Glyph.LoadFromFile('Assets/Receipt.bmp');
+  bmbChange.Glyph.LoadFromFile('Assets/MoneyBag.bmp');
+  bmbCancelOrder.Glyph.LoadFromFile('Assets/Reset.bmp');
+  bmbPrint.Glyph.LoadFromFile('Assets/Print.bmp');
+  bmbAddproduct.Glyph.LoadFromFile('Assets/AddAccount.bmp');
+  bmbStockDelete.Glyph.LoadFromFile('Assets/Delete.bmp');
+  bmbEditStock.Glyph.LoadFromFile('Assets/Edit.bmp');
+  bmbStockSave.Glyph.LoadFromFile('Assets/Saved.bmp');
+  bmbPreviewNewStock.Glyph.LoadFromFile('Assets/Eyes.bmp');
+  bmbStockEditRevert.Glyph.LoadFromFile('Assets/Reset.bmp');
+  bmbCancelEdit.Glyph.LoadFromFile('Assets/Return.bmp');
+  bmbSaveStockEdits.Glyph.LoadFromFile('Assets/Saved.bmp');
+  bmbRegisterNewStock.Glyph.LoadFromFile('Assets/Saved.bmp');
+  bmbAddAccounts.Glyph.LoadFromFile('Assets/AddAccount.bmp');
+  bmbDeleteAccount.Glyph.LoadFromFile('Assets/Delete.bmp');
+  bmbSaveAccount.Glyph.LoadFromFile('Assets/Saved.bmp');
+  bmbMasterReset.Glyph.LoadFromFile('Assets/MasterKey.bmp');
+
   // Every time app launches, will run this check to see if any accounts are registered.
   memLogins.Lines.LoadFromFile('Assets\Logins.txt');
   if memLogins.Lines.Count = 0 then
@@ -1786,6 +1845,7 @@ begin
     pgcMain.ActivePage := tsCreateAccount;
     tsLogon.TabVisible := False;
     bmbReturnLogIn.Enabled := False;
+    bmbReturnLogIn.Glyph.Assign(nil);
     tsRegister.TabVisible := False;
     tsChange.TabVisible := False;
     tsAccounts.TabVisible := False;
@@ -2132,6 +2192,7 @@ begin
     memAccounts.Lines.Add(sNewUser);
     memAccounts.Lines.SaveToFile('Assets\Logins.txt');
     bmbReturnLogIn.Enabled := True;
+    bmbReturnLogIn.Glyph.LoadFromFile('Assets/Return.bmp');
 
     edtCreateUserName.Clear;
     edtCreatePassKey.Clear;
@@ -2286,7 +2347,9 @@ begin
       sSelect := lstStockViewBE.Items[lstStockViewFE.ItemIndex];
       iSelect := lstStockViewBE.Items.IndexOf(sSelect);
       bmbFinalizeOrder.Enabled := True;
+      bmbFinalizeOrder.Glyph.LoadFromFile('Assets/Wallet.bmp');
       bmbRegisterReset.Enabled := True;
+      bmbRegisterReset.Glyph.LoadFromFile('Assets/Reset.bmp');
       for I := 1 to Length(sSelect) do
       begin
         while (bFoundCategory = False) and (iIndex <= Length(sSelect)) or

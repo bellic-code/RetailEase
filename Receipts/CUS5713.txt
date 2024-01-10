@@ -1,0 +1,26 @@
+Welcome to TopTech
+-------------------------------------------
+Product	Q
+Price 
+-------------------------------------------
+IntCorei5 (*1)
+R159,99
+
+Grand total:	R159,99
+-------------------------------------------
+Transaction of: CUS5713
+2024/01/10	14:03
+-------------------------------------------
+
+Change calculated for: 
+Money received: 	R444,00
+Actual total: 	R159,99
+Change returned: 	R284,01
+
+Thank you for shopping at TopTech.
+Have a wonderful day!
+
+Contact Details:
+Phone: 074 562 8961
+Email: toptech-dbn@gmail.com
+
